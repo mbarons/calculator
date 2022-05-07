@@ -14,7 +14,17 @@ function divide (a, b) {
   return a / b;
 }
 
-console.log(add(10, 5));
-console.log(subtract(25, 3));
-console.log(multiply(3, 8));
-console.log(divide(25, 5));
+function operate(a, b, operator) {
+  if (operator == "+") { 
+    add(a, b);}
+
+  else if (operator == "-") {
+    subtract(a, b);
+  }
+  else if (operator == "*") {
+    multiply(a, b);
+  }
+  else if (operator == "/") {
+    divide(a, b);
+  }
+}
