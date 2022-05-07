@@ -1,0 +1,76 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+.calculator-body {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(43, 45, 53);
+  height: 370px;
+  width: 260px;
+  color: white;
+  margin-top: 200px;
+  border-radius: 10px;
+}
+
+.display {
+  display: flex;
+  height: 65px;
+  background-color: rgb(84, 102, 84);
+  margin: 12px;
+  border-radius: 4px;
+  justify-content: flex-end;
+}
+
+.numbers-board {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  flex: 1;
+}
+
+.number, .operations {
+  height: 55px;
+  width: 55px;
+}
+
+#clear {
+  margin-left: 13px;
+  width: 55px;
+}
+
+.number-first-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.number-second-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.number-third-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.number-fourth-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: rgb(154, 153, 155);
+}
