@@ -80,19 +80,21 @@ function processNumber(numberButton) {
     
 function processOperator(operationButton) {
   operationButton.addEventListener("click", () => {
-    if (operationButton.textContent != "="){
+    if (firstNumber == ""){}
+
+    else if (operationButton.textContent != "="){
       if (secondNumber == "") { 
         operator = operationButton.textContent;
         display.textContent = displayContent();
   }
       else {
-        firstNumber = operate(firstNumber, secondNumber, operator);
+        firstNumber = Math.round((operate(firstNumber, secondNumber, operator))* 1000) / 1000;
         secondNumber = "";
         operator = operationButton.textContent;
         display.textContent = displayContent();
     }}
     else if (operationButton.textContent == "=" && firstNumber != "" && secondNumber != "") {
-      firstNumber = operate(firstNumber, secondNumber, operator);
+      firstNumber = Math.round((operate(firstNumber, secondNumber, operator))* 1000) / 1000;
       secondNumber = "";
       operator = undefined;
       display.textContent = displayContent();

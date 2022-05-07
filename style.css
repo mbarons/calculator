@@ -20,6 +20,8 @@ body {
   margin: 12px;
   border-radius: 4px;
   justify-content: flex-end;
+  align-items: center;
+  font-size: 35px;
 }
 
 .numbers-board {
@@ -71,6 +73,21 @@ body {
   margin-bottom: 20px;
 }
 
+#clear {
+  background-color: brown;
+  border-radius: 2px;
+  color: white;
+  font-size: 15px;
+}
+
 button {
-  background-color: rgb(154, 153, 155);
+  background-color: rgb(218, 218, 218);
+  border: 0;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.operations {
+  background-color: rgb(180, 240, 220);
+  font-size: 30px;
 }
